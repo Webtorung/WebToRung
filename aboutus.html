@@ -110,14 +110,13 @@
   background-color: #f9f9f9;
   border: 2px solid #ddd;
   padding: 20px;
-  margin: 0 500px; /* เพิ่ม margin ซ้ายขวา เพื่อไม่ให้กล่องติดขอบจอ */
-  margin-top: 50px; /* เพิ่มระยะห่างจากส่วนของสมาชิก */
+  margin: 50px auto 0 auto; /* บน 50px, ซ้าย-ขวา auto, ล่าง 0 */
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(25, 0, 255, 0.1);
+  max-width: 600px; /* กว้างสุดไม่เกิน 600px */
+  width: 90%; /* แต่ในจอเล็กๆ จะยืดได้ถึง 90% */
 }
-
-
     footer {
       background-color: #f0f0f0;
       color: #333;
