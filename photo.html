@@ -273,3 +273,27 @@
 </div>
 
  <!-- Footer -->
+  <footer>
+    <p>จัดทำโดย กลุ่ม Webtorung</p>
+    <p>สมาชิก: ภูริวัฑฒ์ | ปาลิกา | ทรรศนีย์พร | กมลชนก</p>
+    <p>Email: webtorung@gmail.com</p>
+    <p>&copy; สำหรับโปรเจคกลุ่มรายวิชา 520112-165.</p>
+  </footer>
+  <script>
+    const slides = document.getElementById('slide-container');
+    const totalSlides = slides.children.length;
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      slides.style.transform = `translateX(-${index * 600}px)`;
+    }, 3000); // เปลี่ยนทุก 3 วินาที
+  </script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+</body>
